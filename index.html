@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Assistant UNIDET</title>
+<meta name="theme-color" content="#242e3d">
+<link rel="icon" href="./assets/image/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <img class="brand" src="assets/image/logo.png" alt="UNIDET">
+    <div class="title"><strong>Assistant UNIDET</strong><span><i class="dot"></i>En ligne</span></div>
+    <button id="autoread" class="icon" aria-pressed="false" title="Lire les réponses à voix haute" aria-label="Lecture automatique des réponses"></button>
+    <button id="reset" class="icon" title="Nouvelle conversation" aria-label="Nouvelle conversation"></button>
+  </header>
+
+  <main id="chat" aria-live="polite">
+    <section id="welcome">
+      <img src="./assets/image/logo.png" alt="">
+      <h1>Comment puis-je vous aider ?</h1>
+      <p>Recouvrement amiable, judiciaire ou international, rachat de dettes, suivi de dossier : posez votre question à l'écrit ou à la voix.</p>
+      <div class="chips">
+        <button data-q="Comment fonctionne le recouvrement amiable ?">Recouvrement amiable</button>
+        <button data-q="Quels sont vos frais et votre rémunération ?">Frais et rémunération</button>
+        <button data-q="Comment fonctionne le rachat de dettes ?">Rachat de dettes</button>
+        <button data-q="Comment confier un dossier à UNIDET ?">Confier un dossier</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="bar">
+      <textarea id="input" rows="1" placeholder="Écrivez votre question…" aria-label="Votre message"></textarea>
+      <button id="mic" class="icon" title="Dicter ma question" aria-label="Dicter ma question"></button>
+      <button id="send" class="icon" title="Envoyer" aria-label="Envoyer"></button>
+    </div>
+    <p class="hint">Les réponses peuvent contenir des erreurs. Pour un dossier précis, contactez un conseiller UNIDET.</p>
+  </footer>
+</div>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
